@@ -1,0 +1,10 @@
+{{ if .Site.Params.showToc }}
+{{ if not (eq .Params.showToc false) }}
+<div class="toc">
+    <details {{ if not (eq .Params.defaultOpenToc false) }} open {{ end }}>
+        <summary>TOC</summary>
+        {{ .TableOfContents }}
+    </details>
+</div>
+{{ end }}
+{{ end }}

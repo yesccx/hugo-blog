@@ -1,0 +1,59 @@
+baseURL: http://example.org/
+
+title: Yesccx Blog
+author: yesccx
+
+theme: paper
+languageCode: zh-cn
+
+params:
+    # color style
+    color: gray                                 # linen, wheat, gray, light
+
+    # header social icons
+    github: yesccx                              # github.com/YOUR_GITHUB_ID
+    rss: true                                   # show rss icon
+
+    # home page profile
+    avatar: http://localhost:1313/avator.jpg    # gravatar email or image url
+    name: Yesccx
+    bio: 专心摸鱼，偶尔工作。
+
+    # misc
+    disableHLJS: true                           # disable highlight.js
+    monoDarkIcon: false                         # show monochrome dark mode icon
+    math: true                                  # enable KaTex math typesetting globally
+    comments: false
+
+    # custom
+    dateFormat: 2006年01月02日 15:04             # Posts date format
+    showToc: true                               # Posts show toc
+    postShowPage: false                         # Posts show page
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+    highlight:
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: false
+        noClasses: false
+
+menu:
+    main:
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 10
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 20
+
+taxonomies:
+    tag: tags

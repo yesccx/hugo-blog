@@ -1,0 +1,52 @@
+<footer
+  class="opaco mx-auto flex h-[5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; {{ now.Year }}
+    <a class="link" href="{{ `` | absURL }}">{{ site.Title }}</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >Theme Paper</a
+  >
+</footer>
+
+<script >
+    window.onload = function() {
+        // Image zoom
+        document.querySelectorAll('body img').forEach(function (image, index) {
+            var parent = image.parentElement
+
+            var labelId = 'zoomCheck-' + index;
+            var input = document.createElement('input')
+            input.setAttribute('type', 'checkbox')
+            input.setAttribute('hidden', '')
+            input.setAttribute('id', labelId)
+
+            var label = document.createElement('label')
+            label.setAttribute('for', labelId)
+
+            label.append(image)
+            parent.append(input)
+            parent.append(label)
+        });
+
+        // Code pre show lang
+        document.querySelectorAll('pre').forEach(function(pre) {
+            pre.dataset.lang = pre.querySelector('code').dataset.lang;
+        });
+
+        // Title link
+        document.querySelectorAll('section h1,h2,h3,h4,h5,h6').forEach(function(el) {
+            el.onclick = function(el) {
+                window.location.hash = this.id;
+            }
+        });
+    }
+</script>
