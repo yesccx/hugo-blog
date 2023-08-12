@@ -1,4 +1,4 @@
-baseURL: http://blog.yes-api.com/
+baseURL: https://blog.yes-api.com/
 
 title: Yesccx Blog
 author: yesccx
@@ -15,7 +15,7 @@ params:
     rss: true                                   # show rss icon
 
     # home page profile
-    avatar: http://blog.yes-api.com/avator.jpg    # gravatar email or image url
+    avatar: https://blog.yes-api.com/avator.jpg    # gravatar email or image url
     name: Yesccx
     bio: 专心摸鱼，偶尔工作。
 
