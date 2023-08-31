@@ -15,7 +15,7 @@ params:
     rss: true                                   # show rss icon
 
     # home page profile
-    avatar: https://blog.yes-api.com/avator.jpg    # gravatar email or image url
+    avatar: /avator.jpg    # gravatar email or image url
     name: Yesccx
     bio: 专心摸鱼，偶尔工作。
 
