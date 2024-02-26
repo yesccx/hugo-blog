@@ -1,6 +1,5 @@
 {{ if or .Params.mermaid .Site.Params.mermaid }}
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js"
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js" integrity="sha256-4XUY29zwNw113fj/hwDto4DsA6gxjC2PaJ8BRRtwlAc=" crossorigin="anonymous"></script>
 <script>
     mermaid.init({
         "theme": document.documentElement.classList.contains('dark') ? 'dark' : 'base'

@@ -17,7 +17,7 @@ params:
     # home page profile
     avatar: /avator.jpg    # gravatar email or image url
     name: Yesccx
-    bio: 专心摸鱼，偶尔工作。
+    bio: 专心摸鱼🐠，偶尔工作～
 
     # misc
     disableHLJS: true                           # disable highlight.js
